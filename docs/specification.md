@@ -16,7 +16,21 @@ over the network more similar to making local method calls.
 
 ## Implementation Details
 ### Basic networking:
+
 ![](basic_networking.svg)
 
 Each peer has an `input` channel and an `output` channel. The `input` channel of
 peer 1 corresponds to the `output` channel of peer 2 and vice versa.
+
+### RPC:
+
+![](rpc.svg)
+
+An RPC implementation provides a mechanism that lets a Java program register
+`local` and `remote` methods. The RPC API allows you to "call" the methods 
+registered as remote. When you do this, the method to call and the arguments
+are serialized and set out over the network. The remote peer deserializes the
+information and executes the method locally. The RPC Manager also allows the
+Java program to "receive" calls to the methods registered as local. When you
+do this, the RPC manager deserializes the incoming data and performs the
+appropriate method call locally.
