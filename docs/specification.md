@@ -17,5 +17,6 @@ over the network more similar to making local method calls.
 ## Implementation Details
 ### Basic networking:
 ![](basic_networking.svg)
+
 Each peer has an `input` channel and an `output` channel. The `input` channel of
 peer 1 corresponds to the `output` channel of peer 2 and vice versa.
