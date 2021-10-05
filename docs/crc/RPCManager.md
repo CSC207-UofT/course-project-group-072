@@ -2,8 +2,9 @@
 
 ## Responsibilities:
 - Maintain mapping of methods to numerical IDs
-- Execute incoming RPCs
+- Receive incoming RPCs
 - Send outgoing RPCs
+- Execute RPCs
 
 ## Collaborators
 - RPC
