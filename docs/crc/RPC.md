@@ -1,4 +1,4 @@
-# RPC
+# Class RPC
 
 ## Responsibilities:
 - Target method (int ID)
