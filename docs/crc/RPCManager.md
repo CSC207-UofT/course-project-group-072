@@ -1,4 +1,4 @@
-# RPCManager
+# Class RPCManager
 
 ## Responsibilities:
 - Maintain mapping of methods to numerical IDs
